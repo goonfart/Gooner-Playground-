@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Styled Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #2bc47c8e;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: nowrap;
+        }
+
+        /* Button Base Styles */
+        .button {
+            width: 100px; /* Adjust size as needed */
+            height: 100px;
+            border: none;
+            cursor: pointer;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%; /* Makes buttons circular */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        /* Hover Effects */
+        .button:hover {
+            transform: scale(1.2);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 255, 0, 0.7);
+        }
+
+        /* Individual Button Backgrounds */
+        .gold-heart {
+            background-image: url('https://img.freepik.com/free-photo/3d-heart-white-background-render_113167-21.jpg?size=626&ext=jpg');
+        }
+
+        .ice-cube {
+            background-image: url('https://th.bing.com/th/id/R.32b8ae7213cafee8a564f3feed186071?rik=IPi0eGVQK7VGyA&riu=http%3a%2f%2fgetdrawings.com%2fimage%2fice-cubes-drawing-61.png&ehk=nmOWKjOiwxo8iZnhI0MPJvQ4UoMFPW9A2H3j6LothVk%3d&risl=&pid=ImgRaw&r=0');
+        }
+
+        .third-button {
+            background-image: url('https://e1.pngegg.com/pngimages/100/103/png-clipart-taylor-swift-hq.png');
+        }
+    </style>
+</head>
+<body>
+    <h1>SVG Styled Buttons</h1>
+    <div class="button-container">
+        <button class="button gold-heart" onclick="pickRandomVideo(urls1)"></button>
+        <button class="button ice-cube" onclick="pickRandomVideo(urls2)"></button>
+        <button class="button third-button" onclick="pickRandomVideo(urls3)"></button>
+    </div>
+
+    <script>
+        // URL arrays for each button
+        const urls1 = [
+            "https://www.xvideos.com/video.uvcubbh6347/filthypov_-_playful_busty_blonde_has_trouble_fitting_a_huge_cock_in_her_tight_pussy",
+            "https://www.xvideos.com/video.ublvdtmc3b2/my_best_friend_stole_my_girlfriend_isiah_maxwell_anna_claire_clouds_billy_boston",
+            "https://www.xvideos.com/video.ucvhlav1514/blacked_size-queen_kendra_needs_a_real_bbc_to_please_her",
+            "https://www.xvideos.com/video.ibckubd8209/bangbros_-_wifey_angela_white_cheats_on_husband_with_the_black_plumber",
+            "https://www.xvideos.com/video.ulteavf7183/huge_17_spurts_cumshot",
+            "https://www.xvideos.com/video.uauomfod2bd/bombshell_aletta_ocean_moans_in_pleasure_as_danny_d_stretches_her_asshole_with_his_massive_cock",
+            "https://www.xvideos.com/video.kieioah9bc8/rk_prime_-_katrina_moreno_danny_d_-_sweater_seduction",
+            "https://www.xvideos.com/video.ucfolbmde3a/deeper._baddie_kendra_fucks_enemy_s_bf_in_revenge_threesome",
+            "https://www.xvideos.com/video.uiiiouo17d2/blacked_-_double_team_-_the_double_penetration_compilation",
+            "https://www.xvideos.com/video.uobfbvve825/filthykings_-_best_bbc_scenes_-_watch_these_babes_sucking_and_fucking_a_big_black_cock", 
+            "https://www.xvideos.com/video.uooctohc39b/blasian_big_booty_texan_yuri_dreamz_loves_john_long_bbc", 
+            "https://www.xvideos.com/video.hhhhttk7c87/pull_out_cumshots_compilation", 
+            "https://www.xvideos.com/video.iuvhppv9ce8/blacked_raw_intense_hardcore_compilation", 
+            "https://www.xvideos.com/video.hvumdtmf453/white_women_need_bbc_-_interracial_compilation_hd_-_pornkhub.com", 
+            "https://www.xvideos.com/video.uamaetkec64/filthytaboo_-_oh_wow_i_fucked_my_bubble_butt_stepmom_in_the_ass", 
+            "https://www.xvideos.com/video.ubvpelb82ac/busty_tiny_girlfriend_hops_up_on_the_could_and_blows_big_uncut_cock_facing_the_camera_cumswaps_with_boyfriend_", 
+            "https://www.eporner.com/video-eX1G265mMWf/alice-wild-servicing-blacks-in-a-gangbang/", 
+            "https://www.eporner.com/video-fQ1ZwE3hgHV/bbc-bnwo-big-black-cock-dick-blowjob-interracial-pmv-compilation-white-girl-cuck-cuckold-petite-joi-jerk-off-onlyfans-whiteboy-cock-hero/", 
+            "https://www.eporner.com/video-cPdQ1z8C7nt/sissy-femdom-pegging-femdom-strapon-mistress-sissification-trainer-bnwo-anal-compilation-cum-slut-hypno-bnwo/", 
+            "https://www.eporner.com/video-viJjFOVcToO/pmv-huge-dicks/", 
+            "https://www.eporner.com/video-l145JY0pZH6/giant-black-cocks-pmv/", 
+            "https://www.eporner.com/video-SBSZ1z6ThS6/let-bbc-penetrate-your-mind-joi/"
+        ];
+
+        const urls2 = [
+            "https://hypnotube.com/video/your-first-gloryhole-visit-hypnodancer-40646.html",
+            "https://www.pornhub.com/view_video.php?viewkey=ph5dff7ccf2ef4e",
+            "https://www.pornhub.com/view_video.php?viewkey=ph620e5e76080f8",
+            "https://www.pornhub.com/view_video.php?viewkey=ph62dc6c264d668",
+            "https://www.pornhub.com/view_video.php?viewkey=658d4f3991655",
+            "https://www.pornhub.com/view_video.php?viewkey=ph5577137570319",
+            "https://www.pornhub.com/view_video.php?viewkey=ph5fbbdb13ab7c8",
+            "https://www.xvideos.com/video.hbtlvmb9bae/brazzers_-_eva_lovia_-_pornstars_like_it_big",
+            "https://www.xvideos.com/video.hcupolbc9cf/134-sextermedia-full", 
+            "https://www.eporner.com/video-wIEqOqXMIBK/once-she-goes-black-part-6/", 
+            "https://www.eporner.com/video-fXqJ9bSRzIa/absolute-submission-to-bbc/", 
+            "https://www.eporner.com/video-RSuP9PMjrR6/she-is-so-beautiful/", 
+            "https://www.eporner.com/video-83TE9pubE1H/teen-tries-her-first-bbc/", 
+            "https://www.eporner.com/video-KhcY65iIRyZ/tiny-holes-with-bbc/", 
+            "https://www.eporner.com/video-THZduQFv3Ai/girls-only-want-black/", 
+            "https://www.eporner.com/video-VBD9pbMeLJA/ultimate-bbc-pmv-compilation/", 
+            "https://www.eporner.com/video-XMGKXNnSRFy/bbc-hoes-pmv/", 
+            "https://www.eporner.com/video-NNSUiKmOPiK/flipflip-bbc-gooner/ "
+        ];
+
+        const urls3 = [
+            "https://www.playvids.com/es/YYoSeRcaatw/anna-claire-clouds-fucking-her-ex-in-front-of-me-milf-nude",
+            "https://www.bellesa.co/videos/9128/satin-dresses",
+            "https://www.bellesa.co/videos/6575/tender-love",
+            "https://m.hellporno.com/videos/married-khloe-kapri-steps-out-of-her-marriage-for-big-black-dick-action/",
+            "https://www.porntrex.com/video/2514384/blonde-babe-dp-fucked-by-black-friends",
+            "https://www.pornhub.com/view_video.php?viewkey=64d18b359fca2",
+            "https://xgroovy.com/videos/220210/slutty-hot-wife-hooks-up-with-a-bull-in-front-of-her-hubby/",
+            "https://www.eporner.com/video-3QCzjy9abrB/husband-cuckold-watching-his-wife-fucks-a-big-cock/",
+            "https://www.xvideos.com/video.ublvdtmc3b2/my_best_friend_stole_my_girlfriend_isiah_maxwell_anna_claire_clouds_billy_boston", 
+            "https://www.xvideos.com/video.ucvhlav1514/blacked_size-queen_kendra_needs_a_real_bbc_to_please_her", 
+            "https://www.xvideos.com/video.uilvkfd0d06/blacked_diamond_has_secret_affair_with_her_bestie_s_hot_bf", 
+            "https://www.xvideos.com/video.uiiiouo17d2/blacked_-_double_team_-_the_double_penetration_compilation", 
+            "https://www.xvideos.com/video.ihcpembe974/riding_on_the_s_roll", 
+            "https://www.xvideos.com/video.utpfmmd15b7/cock_gripping_pussy", 
+            "https://www.xvideos.com/video.uhvdimo3e7f/tatted_slutty_hotwife_brenna_mckenna_gets_fucked_by_big_dick_lover_in_front_of_her_man", 
+            "https://www.xvideos.com/video.upfftame4bb/wife_leaves_husband_at_home_to_go_ride_big_black_cock", 
+            "https://www.xvideos.com/video.itbvtab31dc/cumshots_compilation_2", 
+            "https://www.xvideos.com/video.kfekpibad3e/best_cumshot_compilation_2021", 
+            "https://www.xvideos.com/video.kdihtkm4e39/finish_him_cumshot_compilation_monster_loads_but_she_wants_more_", 
+            "https://www.xvideos.com/video.kmlvuek612b/ccc_-_cuckold_cum_compilation", 
+            "https://www.xvideos.com/video.uomividb74b/julesjordan.com_-_busty_in_all_the_right_places_payton_preslee_shows_dredd_she_can_handle_his_bbc",
+        ];
+
+        // Function to pick a random video
+        function pickRandomVideo(urls) {
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            const randomURL = urls[randomIndex];
+            if (randomURL) {
+                window.open(randomURL, '_blank');
+            } else {
+                alert('No valid URL found.');
+            }
+        }
+    </script>
+</body>
+</html>
